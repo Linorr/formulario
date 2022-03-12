@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Rva</title>
+    <link rel="stylesheet" href="/Css/estilos.css"
+    <php href="/Php/main.php"
+</head>
+<body>
+    <form action="/editor/form-php.php" method="post" id="formquiro">
+        <h3 class="titulo">RESERVA DE HABITACIONES</h3>
+        <label><span class="cab">Nombre y Apellido</span></labeldos> <input type="text" name="nombre" id="nombre"></label>
+        <label><span class="cab">Fecha de la reserva</span> <input type="date" name="fecha" id="fecha"></label>
+        <label><span class="cab">Recepcionista</span>
+        <select name="recep" id="recep">
+            <option value="Juan">Jefe de Recepción</option>
+            <option value="Luisa">David Llorente</option>
+
+            <option value="Pedro">Javier</option>
+            <option value="Ana">Mercedes</option>
+        </select> 
+        </label>
+        <br>
+        <label><span class="cab">Solo Alojamiento:</span><input type="radio" name="Turno" value="Mañana"  id="Turno[0]"></label>
+        <label><span class="cab">Alojamiento y desayuno:</span><input type="radio" name="Turno" value="Tarde"  id="Turno[1]"></label>
+        <label><span class="cab">Sala de Reunión</span><input type="checkbox" name="sala" id="sala" value="1"></label>
+        <div class="botones">
+        <input type="submit" name="enviar" id="enviar">
+        <input type="reset" name="rest" id="reset">
+        </div></form> 
+</body>
+</html>
